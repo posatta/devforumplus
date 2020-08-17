@@ -1,0 +1,25 @@
+{
+	"name": "devforumplus",
+	"version": "0.0.0",
+	"description": "Makes the Roblox DevForum that bit nicer.",
+	"private": true,
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elliottlmz/devforumplus.git"
+	},
+	"author": "Elliott Mozley (emozley.uk)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/elliottlmz/devforumplus/issues"
+	},
+	"homepage": "https://github.com/elliottlmz/devforumplus#readme",
+	"devDependencies": {
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12"
+	},
+	"dependencies": {}
+}

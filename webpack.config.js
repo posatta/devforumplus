@@ -1,7 +1,7 @@
 const path = require("path")
 
 module.exports = {
-	mode: "development",
+	mode: "production",
 	entry: path.join(__dirname, "src", "index.js"),
 	output: {
 		filename: "devforumplus.js",

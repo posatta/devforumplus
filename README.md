@@ -2,7 +2,9 @@
 
 A browser extension designed to makes the Roblox DevForum that bit nicer.
 
-Available for both Chrome nad Firefox. Feel free to port to other browesrs if you want, the main part is just `devforumplus.js`.
+Releases for Chrome and Firefox coming soon. Feel free to port to other browesrs if you want, the main part is just `devforumplus.js`.
+
+(Extension is pending Mozilla review)
 
 ## Features
 

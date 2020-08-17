@@ -29,3 +29,8 @@ Webpack is used to build the final `devforumplus.js` file because I hate browser
 The actual code is in the `src` file, with `src/index.js` being the entry point.
 
 See the `webpack.config.js` for more information.
+
+### Compiling for release (Firefox)
+
+`npm run prerelease-firefox` will call webpack (to build devforumplus.js) and will use the
+`web-ext build` command in Mozilla's Extension Workshop to create the .zip file.

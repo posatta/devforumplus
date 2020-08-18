@@ -1,4 +1,4 @@
-const flair = `<span style="border: 1px solid pink;border-radius: 9999px;padding: 4px 8px;font-size: 10px;">NEW MEMBER</span>`
+import flairs from "./flairs"
 
 let newMembers = []
 let notNewMembers = []
@@ -18,24 +18,9 @@ async function handlePost(post) {
 			post.getAttribute("data-post-id")
 		)
 
-		if (amNewMember) {
-			const row = getChild(post, "row")
-			const body = getChild(row, "topic-body")
-			const meta = getChild(body, "topic-meta-data")
-			const names = getChild(meta, "names")
-			names.innerHTML += flair
-		}
+		if (amNewMember) flairs.addFlair(post, "newMember")
 
 		post.className += ` ${CLASS_NAME}`
-	}
-}
-
-function getChild(element, className) {
-	for (let i = 0; i < element.childNodes.length; i++) {
-		const child = element.childNodes[i]
-		if (child.classList.contains(className)) {
-			return child
-		}
 	}
 }
 
@@ -52,7 +37,7 @@ async function isNewMember(userId, postId) {
 	const blob = await res.blob()
 	const post = JSON.parse(await blob.text())
 
-	if (post.trust_level == 1) {
+	if (post.trust_level === 1) {
 		newMembers.push(userId)
 		return true
 	} else {

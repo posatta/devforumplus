@@ -18,6 +18,11 @@ Releases for Chrome and Firefox coming soon. Feel free to port to other browesrs
 
 - PM templates (stuff like 'it's Roblox not ROBLOX' but explained well)
 
+## Known bugs
+
+- Flairs disappear when you expand a previous reply.
+- Roblox account is marked as new member
+
 ## Contributions
 
 PRs welcome. Please respect the style guide in the editorconfig and prettierrc.

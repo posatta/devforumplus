@@ -1,5 +1,7 @@
 const shortcuts = {
 	"!!30": "<the thirty character limit />",
+	"!!SPOON":
+		"While you are helping people on the forum, please stop spoonfeeding them code. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.",
 	"!!ROBLOX": `Hi,
 
 Just to let you know, the correct capitalization of 'ROBLOX' is Roblox. This is because Roblox is a proper noun, not an acronym.

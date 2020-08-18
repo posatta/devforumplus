@@ -4,20 +4,22 @@ const OP_CLASS_NAME = "-!-has-op-flairs"
 const UF_CLASS_NAME = "-!-has-user-flairs"
 
 const USER_FLAIRS = {
-	"2832": "pluginDev",
-	// "1311": "robloxMan",
+	"2832": "pluginDev", // elliott
+	"394134": "oldmember", // new member Jrelvas
+
+	"317101": "verified", // dibblydubblydoo (regular)
+	"19554": "verified", // brokenVectors (regular)
+	"125290": "verified", // pythonsbyte (as good as regular)
 }
 const POST_FLAIRS = {}
-const TOPIC_FLAIRS = {
-	// "46429": "rules",
-}
+const TOPIC_FLAIRS = {}
 
 function handleOP(post) {
 	if (!post) return false
 	if (post.parentElement.classList.contains("topic-owner")) {
 		if (post.classList.contains(OP_CLASS_NAME)) return
 
-		flairs.addFlair(post, "newMember")
+		flairs.addFlair(post, "op")
 		post.className += ` ${OP_CLASS_NAME}`
 	}
 }

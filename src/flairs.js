@@ -1,5 +1,3 @@
-const opFlair = `<span style="border: 1px solid red;border-radius: 9999px;padding: 4px 8px;font-size: 10px;">OP</span>`
-
 function makeFlair(text, color) {
 	return `<span style="border: 1px solid ${color};border-radius: 9999px;padding: 4px 8px;font-size: 10px;">${text}</span>`
 }
@@ -8,6 +6,9 @@ const flairs = {
 	op: makeFlair("OP", "red"),
 	newMember: makeFlair("NEW MEMBER", "pink"),
 	pluginDev: makeFlair("PLUGIN DEV", "orange"),
+	oldmember: makeFlair("OLD MEMBER", "black"),
+	suspended: `<span title="Suspended"><svg class="fa d-icon d-icon-ban svg-icon svg-string" xmlns="http://www.w3.org/2000/svg" style="color:#e45735 !important;"><use xlink:href="#ban"></use></svg></span>`,
+	verified: `<span title="Verified"><svg class="fa d-icon d-icon-check-circle svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#check-circle"></use></svg></span>`,
 }
 
 function getChild(element, className) {

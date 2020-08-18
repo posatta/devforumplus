@@ -8,8 +8,6 @@ const flairs = {
 	op: makeFlair("OP", "red"),
 	newMember: makeFlair("NEW MEMBER", "pink"),
 	pluginDev: makeFlair("PLUGIN DEV", "orange"),
-	mulan: makeFlair("The new Mulan is coming out soon :smile:", "brown"),
-	idk: `<img style="display:inline-block;height:30px;width:auto;" src="/uploads/default/original/4X/8/4/2/842744ca823fbdb6de2e8cc6e22cf9593f9d1648.png" />`,
 }
 
 function getChild(element, className) {

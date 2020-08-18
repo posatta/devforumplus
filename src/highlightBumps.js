@@ -9,11 +9,22 @@ function handleGap(elem) {
 		let baseSeconds = 1
 
 		switch (medium) {
+			case "day":
+				baseSeconds = 86400
+				break
 			case "days":
 				baseSeconds = 86400
 				break
+
+			case "month":
+				baseSeconds = 2629800
+				break
 			case "months":
 				baseSeconds = 2629800
+				break
+
+			case "year":
+				baseSeconds = 31557600
 				break
 			case "years":
 				baseSeconds = 31557600
@@ -21,7 +32,6 @@ function handleGap(elem) {
 		}
 
 		let time = baseSeconds * number
-		console.log(number, medium, baseSeconds, time)
 
 		if (time >= 63115200) {
 			// 2 years

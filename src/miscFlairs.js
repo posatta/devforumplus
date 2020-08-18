@@ -6,6 +6,7 @@ const UF_CLASS_NAME = "-!-has-user-flairs"
 const USER_FLAIRS = {
 	"2832": "pluginDev", // elliott
 	"394134": "oldmember", // new member Jrelvas
+	"1311": "robloxMan",
 
 	"317101": "verified", // dibblydubblydoo (regular)
 	"19554": "verified", // brokenVectors (regular)

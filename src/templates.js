@@ -1,5 +1,14 @@
 const shortcuts = {
 	"!!30": "<the thirty character limit />",
+	"!!ROBLOX": `Hi,
+
+Just to let you know, the correct capitalization of 'ROBLOX' is Roblox. This is because Roblox is a proper noun, not an acronym.
+
+ROBLOX was previously used, however this has changed; there are still some older sources which may use ROBLOX, however newer sources, including the [Roblox Name and Logo usage guidelines](https://en.help.roblox.com/hc/en-us/articles/115001708126-Roblox-Name-and-Logo-Community-Usage-Guidelines) use the newer 'Roblox' capitalization.
+
+To answer the inevitable question, yes, the logo is written 'ROBLOX', however the wordmark does not equate to the capitalization in text; e.g. Discord's logo is written as 'DISCORD'. You can find similar things with a number of brands.
+
+Feel free to ask me any further questions you may have about this.`,
 }
 
 function handleTextArea(textarea) {

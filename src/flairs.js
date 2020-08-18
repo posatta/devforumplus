@@ -8,6 +8,7 @@ const flairs = {
 	pluginDev: makeFlair("PLUGIN DEV", "orange"),
 	oldmember: makeFlair("OLD MEMBER", "black"),
 	robloxMan: makeFlair("ROBLOX MAN", "#00A2FF"),
+	AHHHHHHHH: makeFlair("VERY FUNNY TOMATO MAN", "red"),
 	suspended: `<span title="Suspended"><svg class="fa d-icon d-icon-ban svg-icon svg-string" xmlns="http://www.w3.org/2000/svg" style="color:#e45735 !important;"><use xlink:href="#ban"></use></svg></span>`,
 	verified: `<span title="Verified"><svg class="fa d-icon d-icon-check-circle svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#check-circle"></use></svg></span>`,
 }

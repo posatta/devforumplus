@@ -7,6 +7,7 @@ const USER_FLAIRS = {
 	"2832": "pluginDev", // elliott
 	"394134": "oldmember", // new member Jrelvas
 	"1311": "robloxMan",
+	"27969": "AHHHHHHHH",
 
 	"317101": "verified", // dibblydubblydoo (regular)
 	"19554": "verified", // brokenVectors (regular)

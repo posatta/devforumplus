@@ -17,8 +17,11 @@ Releases for Chrome and Firefox coming soon. Feel free to port to other browesrs
 ## Features coming soon
 
 - PM templates (stuff like 'it's Roblox not ROBLOX' but explained well)
-- Customization thingy-magicky (so you can add custom settings, custom flairs, custom highlights, etc)
-- Improvements to the flair code (so i can add more flairs!!)
+
+## Known bugs
+
+- Flairs disappear when you expand a previous reply.
+- Roblox account is marked as new member
 
 ## Contributions
 

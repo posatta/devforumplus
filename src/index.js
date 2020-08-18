@@ -1,11 +1,13 @@
 import badUser from "./badUser"
-import flairOP from "./flairOP"
+import miscFlairs from "./miscFlairs"
 import highlightStaff from "./highlightStaff"
 import flairNewMember from "./flairNewMember"
 import highlightBumps from "./highlightBumps"
+import templates from "./templates"
 
 badUser()
-flairOP()
+miscFlairs()
 highlightStaff()
 flairNewMember()
 highlightBumps()
+templates()

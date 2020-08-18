@@ -1,7 +1,10 @@
-const flair = `<span style="border: 1px solid pink;border-radius: 9999px;padding: 4px 8px;font-size: 10px;">NEW MEMBER</span>`
+import flairs from "./flairs"
 
 let newMembers = []
 let notNewMembers = []
+
+let suspendedUsers = []
+let notSuspended = []
 
 const FETCH_CONFIG = {
 	method: "GET",
@@ -13,29 +16,18 @@ async function handlePost(post) {
 	if (!post) return false
 
 	if (!post.classList.contains(CLASS_NAME)) {
-		const amNewMember = await isNewMember(
+		post.className += ` ${CLASS_NAME}`
+		const { amNewMember, postData } = await isNewMember(
 			post.getAttribute("data-user-id"),
 			post.getAttribute("data-post-id")
 		)
 
-		if (amNewMember) {
-			const row = getChild(post, "row")
-			const body = getChild(row, "topic-body")
-			const meta = getChild(body, "topic-meta-data")
-			const names = getChild(meta, "names")
-			names.innerHTML += flair
-		}
+		const amSuspended = await isSuspended(post.getAttribute("data-user-id"), postData).catch(
+			console.error
+		)
 
-		post.className += ` ${CLASS_NAME}`
-	}
-}
-
-function getChild(element, className) {
-	for (let i = 0; i < element.childNodes.length; i++) {
-		const child = element.childNodes[i]
-		if (child.classList.contains(className)) {
-			return child
-		}
+		if (amNewMember) flairs.addFlair(post, "newMember")
+		if (amSuspended) flairs.addFlair(post, "suspended")
 	}
 }
 
@@ -52,11 +44,33 @@ async function isNewMember(userId, postId) {
 	const blob = await res.blob()
 	const post = JSON.parse(await blob.text())
 
-	if (post.trust_level == 1) {
+	if (post.trust_level !== 1 || post.staff === true) {
+		notNewMembers.push(userId)
+		return { amNewMember: false, postData: post }
+	} else {
 		newMembers.push(userId)
+		return { amNewMember: true, postData: post }
+	}
+}
+
+async function isSuspended(userId, post) {
+	if (suspendedUsers.indexOf(userId) != -1) return true
+	if (notSuspended.indexOf(userId) != -1) return false
+
+	const res = await fetch(`https://devforum.roblox.com/u/${post.username}.json`, FETCH_CONFIG)
+
+	if (!res.ok) {
+		throw new Error(`HTTP error! Status: ${res.status}`)
+	}
+
+	const blob = await res.blob()
+	const user = JSON.parse(await blob.text())
+
+	if (user.user.suspended_till) {
+		suspendedUsers.push(userId)
 		return true
 	} else {
-		notNewMembers.push(userId)
+		notSuspended.push(userId)
 		return false
 	}
 }

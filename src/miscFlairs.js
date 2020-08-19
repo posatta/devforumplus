@@ -9,6 +9,7 @@ const USER_FLAIRS = {
 	"1311": "robloxMan",
 	"27969": "AHHHHHHHH",
 	"35829": "carrot",
+	"38549": "exploiter",
 
 	"317101": "verified", // dibblydubblydoo (regular)
 	"19554": "verified", // brokenVectors (regular)

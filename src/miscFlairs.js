@@ -10,6 +10,7 @@ const USER_FLAIRS = {
 	"27969": "AHHHHHHHH",
 	"35829": "carrot",
 	"38549": "exploiter",
+	"20751": "janet",
 
 	"317101": "verified", // dibblydubblydoo (regular)
 	"19554": "verified", // brokenVectors (regular)

@@ -11,6 +11,7 @@ const flairs = {
 	AHHHHHHHH: makeFlair("VERY FUNNY TOMATO MAN", "red"),
 	carrot: makeFlair("CARROT", "orange"),
 	exploiter: makeFlair("SHADY EXPLOITER", "purple"),
+	janet: makeFlair("ANTI- OPEN SOURC E", "brown"),
 
 	suspended: `<span title="Suspended"><svg class="fa d-icon d-icon-ban svg-icon svg-string" xmlns="http://www.w3.org/2000/svg" style="color:#e45735 !important"><use xlink:href="#ban"></use></svg></span>`,
 	verified: `<span title="Verified"><svg class="fa d-icon d-icon-check-circle svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#check-circle"></use></svg></span>`,

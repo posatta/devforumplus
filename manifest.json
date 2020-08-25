@@ -1,11 +1,12 @@
 {
 	"manifest_version": 2,
 	"name": "DevForum+",
-	"version": "0.2",
+	"version": "0.3",
 	"description": "Makes the Roblox DevForum that bit nicer.",
 	"icons": {
 		"48": "icons/icon48.png",
-		"96": "icons/icon96.png"
+		"96": "icons/icon96.png",
+		"100": "icons/icon100.png"
 	},
 	"content_scripts": [
 		{

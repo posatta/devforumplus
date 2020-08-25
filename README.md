@@ -2,9 +2,13 @@
 
 A browser extension designed to makes the Roblox DevForum that bit nicer.
 
-Releases for Chrome and Firefox coming soon. Feel free to port to other browesrs if you want, the main part is just `devforumplus.js`.
+Feel free to port to other browsers if you want, the main part is just `devforumplus.js`.
 
-(Extension is pending Mozilla review)
+## Install
+
+Firefox: https://addons.mozilla.org/en-US/firefox/addon/devforum/
+
+Chrome: (pending review)
 
 ## Features
 
@@ -13,10 +17,7 @@ Releases for Chrome and Firefox coming soon. Feel free to port to other browesrs
 - Flairs new members (as network efficient as it can be; one request per user, caches for tab life)
 - Highlights posts by Roblox staff members (useful for skimming announcements)
 - Highlights excessive bumps (it gets redder the more of a bump it is)
-
-## Features coming soon
-
-- PM templates (stuff like 'it's Roblox not ROBLOX' but explained well)
+- PM Templates
 
 ## Known bugs
 

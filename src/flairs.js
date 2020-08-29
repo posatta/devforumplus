@@ -28,18 +28,17 @@ function getChild(element, className) {
 
 export default {
 	addFlair: (post, flair) => {
-		const flairContents = flairs[flair];
-		let body;
+		const flairContents = flairs[flair]
 		
 		for (let row of post.getElementsByClassName("row")) {
-			body = getChild(row, "topic-body");
+			var body = getChild(row, "topic-body")
 			if (body) {
-				break;
+				break
 			}
 		}
 		
-		const meta = getChild(body, "topic-meta-data");
-		const names = getChild(meta, "names");
-		names.innerHTML += flairContents;
+		const meta = getChild(body, "topic-meta-data")
+		const names = getChild(meta, "names")
+		names.innerHTML += flairContents
 	},
 }

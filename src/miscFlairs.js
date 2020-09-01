@@ -5,6 +5,7 @@ const UF_CLASS_NAME = "-!-has-user-flairs"
 
 const USER_FLAIRS = {
 	1311: "robloxMan",
+	297072: "bruh",
 }
 const POST_FLAIRS = {}
 const TOPIC_FLAIRS = {}

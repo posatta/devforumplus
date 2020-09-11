@@ -29,8 +29,14 @@ function getChild(element, className) {
 export default {
 	addFlair: (post, flair) => {
 		const flairContents = flairs[flair]
-		const row = getChild(post, "row")
-		const body = getChild(row, "topic-body")
+		
+		for (let row of post.getElementsByClassName("row")) {
+			var body = getChild(row, "topic-body")
+			if (body) {
+				break
+			}
+		}
+		
 		const meta = getChild(body, "topic-meta-data")
 		const names = getChild(meta, "names")
 		names.innerHTML += flairContents

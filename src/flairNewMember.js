@@ -22,10 +22,12 @@ async function handlePost(post) {
 			post.getAttribute("data-post-id")
 		)
 
-		if (postData)
-			const amSuspended = await isSuspended(post.getAttribute("data-user-id"), postData).catch(
+		let amSuspended = false
+		if (postData) {
+			amSuspended = await isSuspended(post.getAttribute("data-user-id"), postData).catch(
 				console.error
 			)
+		}
 
 		if (amNewMember) flairs.addFlair(post, "newMember")
 		if (amSuspended) flairs.addFlair(post, "suspended")

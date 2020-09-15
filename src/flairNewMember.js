@@ -22,9 +22,10 @@ async function handlePost(post) {
 			post.getAttribute("data-post-id")
 		)
 
-		const amSuspended = await isSuspended(post.getAttribute("data-user-id"), postData).catch(
-			console.error
-		)
+		if (postData)
+			const amSuspended = await isSuspended(post.getAttribute("data-user-id"), postData).catch(
+				console.error
+			)
 
 		if (amNewMember) flairs.addFlair(post, "newMember")
 		if (amSuspended) flairs.addFlair(post, "suspended")
@@ -32,13 +33,15 @@ async function handlePost(post) {
 }
 
 async function isNewMember(userId, postId) {
-	if (newMembers.indexOf(userId) != -1) return true
-	if (notNewMembers.indexOf(userId) != -1) return false
+	if (newMembers.indexOf(userId) != -1) return { amNewMember: true }
+	if (notNewMembers.indexOf(userId) != -1) return { amNewMember: true }
 
 	const res = await fetch(`https://devforum.roblox.com/posts/${postId}.json`, FETCH_CONFIG)
 
 	if (!res.ok) {
-		return false // throw new Error(`HTTP error! Status: ${res.status}`)
+		console.error("HTTP Error:")
+		console.log(res)
+		return false
 	}
 
 	const blob = await res.blob()

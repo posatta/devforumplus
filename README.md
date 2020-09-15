@@ -8,7 +8,7 @@ Feel free to port to other browsers if you want, the main part is just `devforum
 
 Firefox: https://addons.mozilla.org/en-US/firefox/addon/devforum/
 
-Chrome: (pending review)
+Chrome: https://chrome.google.com/webstore/detail/devforum%20/obannamndmafaddpcghdkilafpcckebl
 
 ## Features
 

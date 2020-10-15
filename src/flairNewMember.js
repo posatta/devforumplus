@@ -29,6 +29,7 @@ async function handlePost(post) {
 			)
 		}
 
+		// this is broken lol
 		if (amNewMember) flairs.addFlair(post, "newMember")
 		if (amSuspended) flairs.addFlair(post, "suspended")
 	}
@@ -49,12 +50,12 @@ async function isNewMember(userId, postId) {
 	const blob = await res.blob()
 	const post = JSON.parse(await blob.text())
 
-	if (post.trust_level !== 1 || post.staff === true) {
-		notNewMembers.push(userId)
-		return { amNewMember: false, postData: post }
-	} else {
+	if (post.trust_level == 1 && post.staff === false) {
 		newMembers.push(userId)
 		return { amNewMember: true, postData: post }
+	} else {
+		notNewMembers.push(userId)
+		return { amNewMember: false, postData: post }
 	}
 }
 

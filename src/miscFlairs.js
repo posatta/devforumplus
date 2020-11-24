@@ -4,17 +4,10 @@ const OP_CLASS_NAME = "-!-has-op-flairs"
 const UF_CLASS_NAME = "-!-has-user-flairs"
 
 const USER_FLAIRS = {
-	"2832": "pluginDev", // elliott
-	"394134": "oldmember", // new member Jrelvas
-	"1311": "robloxMan",
-	"27969": "AHHHHHHHH",
-	"35829": "carrot",
-	"38549": "exploiter",
-	"20751": "janet",
+	1311: "robloxMan", // roblox
+	297072: "bruh", // ??
+	22327: "ourGod", // coef
 
-	"317101": "verified", // dibblydubblydoo (regular)
-	"19554": "verified", // brokenVectors (regular)
-	"125290": "verified", // pythonsbyte (as good as regular)
 }
 const POST_FLAIRS = {}
 const TOPIC_FLAIRS = {}

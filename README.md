@@ -1,5 +1,7 @@
 # devforumplus
 
+> This repository was previously under [ElliottLMz](https://github.com/elliottlmz). It is now under [DFmeta](https://github.com/dfmeta) and maintained by [@posatta](https://github.com/posatta) and the [dfmeta team](https://github.com/orgs/dfmeta/people)
+
 A browser extension designed to makes the Roblox DevForum that bit nicer.
 
 Feel free to port to other browsers if you want, the main part is just `devforumplus.js`.

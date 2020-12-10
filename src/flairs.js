@@ -4,7 +4,7 @@ function makeFlair(text, color) {
 
 const flairs = {
 	op: makeFlair("OP", "red"),
-	member: makeFlair("MEMBER (1)", "#68D1F1"), // Called member now.
+	member: makeFlair("MEMBER (1)", "#68D1F1"),
 	regular: makeFlair("REGULAR (2)", "#4B9CFA"),
 	editor: makeFlair("EDITOR (3)", "#0099CC"),
 	leader: makeFlair("LEADER (4)", "#005F7F"),

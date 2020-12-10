@@ -4,12 +4,13 @@ function makeFlair(text, color) {
 
 const flairs = {
 	op: makeFlair("OP", "red"),
-	newMember: makeFlair("MEMBER", "pink"), // Called member now.
+	member: makeFlair("MEMBER (1)", "#68D1F1"), // Called member now.
+	regular: makeFlair("REGULAR (2)", "#4B9CFA"),
+	editor: makeFlair("EDITOR (3)", "#0099CC"),
+	leader: makeFlair("LEADER (4)", "#005F7F"),
 	robloxMan: makeFlair("ROBLOX MAN", "#00A2FF"), // makes annoying posts in #announcements
 	bruh: makeFlair("BRUH", "black"), // yes
 	ourGod: makeFlair("OUR GOD", "#8119d1"), // duh our lord ofc we must give a flair
-
-
 	suspended: `<span title="Suspended"><svg class="fa d-icon d-icon-ban svg-icon svg-string" xmlns="http://www.w3.org/2000/svg" style="color:#e45735 !important"><use xlink:href="#ban"></use></svg></span>`,
 	verified: `<span title="Verified"><svg class="fa d-icon d-icon-check-circle svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#check-circle"></use></svg></span>`, //Deprecated, no need for this, will remove later to prevent breaking.
 }
@@ -21,6 +22,7 @@ function getChild(element, className) {
 			return child
 		}
 	}
+	return null
 }
 
 export default {

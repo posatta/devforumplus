@@ -1,5 +1,7 @@
 const shortcuts = {
-	"!!DUPE": `Many topics have been made regarding this; in the future please try to search before posting.\n\n`, // the new lines are so you can link the search query
+	"!!DUPE": `Many topics have been made regarding this; in the future please try to search before posting.
+
+`, // the new lines are so you can link the search query
 	"!!SPOON": `While you are helping people on the forum, please try not to give code-only replies. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.`,
 	"!!ROBLOX": `Hi,
 

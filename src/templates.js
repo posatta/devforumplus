@@ -1,6 +1,5 @@
 const shortcuts = {
 	"!!DUPE": "Many topics have been made regarding this; in the future please try to search before posting.\n\n", // the new lines are so you can link the search query
-	"!!30": "<aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa />", // Quickly get through the limit.
 	"!!SPOON":
 		"While you are helping people on the forum, please try not to give code-only replies. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.",
 	"!!ROBLOX": `Hi,
@@ -29,20 +28,21 @@ Calling out others is not allowed publicly, if you need to solve a dispute, plea
 
 Feel free to ask me any follow up questions if you have any.`,
         
-        "!!LUA": `Hi! 
+    "!!LUA": `Hi! 
 
-        It looks like you've written "LUA". Lua is not an acronym (or an initialism) - it is the Portuguese word for 'moon'. 
+It looks like you've written "LUA". Lua is not an acronym (or an initialism) - it is the Portuguese word for 'moon'. 
 
-        Fun fact: Lua was created in 1993 by Roberto Ierusalimschy, Luiz Henrique de Figueiredo and Waldemar Celes, members of the Computer Graphics Technology Group (Tecgraf) at the Pontifical Catholic University of Rio de Janeiro, in Brazil. See here for more info: https://www.lua.org/about.html`
+Fun fact: Lua was created in 1993 by Roberto Ierusalimschy, Luiz Henrique de Figueiredo and Waldemar Celes, members of the Computer Graphics Technology Group (Tecgraf) at the Pontifical Catholic University of Rio de Janeiro, in Brazil. See here for more info: https://www.lua.org/about.html`
 }
 
 function handleTextArea(textarea) {
 	if (textarea.classList.contains("-!--templates-added")) return false
 
 	textarea.addEventListener("input", () => {
-		if (shortcuts[textarea.value]) {
-			textarea.value = shortcuts[textarea.value]
-		}
+		textarea.value = textarea.value.replace(/\!\!\S*/, (match) => {
+			// now you don't have to clear the composer to use a shortcut
+			return shortcuts[match] || match
+		})
 	})
 
 	textarea.className += " -!--templates-added"

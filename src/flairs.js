@@ -21,6 +21,7 @@ function getChild(element, className) {
 			return child
 		}
 	}
+        return null
 }
 
 export default {

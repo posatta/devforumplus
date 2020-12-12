@@ -1,8 +1,8 @@
 const shortcuts = {
-	"!!DUPE": "Many topics have been made regarding this; in the future please try to search before posting.\n\n", // the new lines are so you can link the search query
-	"!!30": "<aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa />", // Quickly get through the limit.
-	"!!SPOON":
-		"While you are helping people on the forum, please stop spoonfeeding them code. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.",
+	"!!DUPE": `Many topics have been made regarding this; in the future please try to search before posting.
+
+`, // the new lines are so you can link the search query
+	"!!SPOON": `While you are helping people on the forum, please try not to give code-only replies. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.`,
 	"!!ROBLOX": `Hi,
 
 Just to let you know, the correct capitalization of 'ROBLOX' is Roblox. This is because Roblox is a proper noun, not an acronym.
@@ -29,7 +29,7 @@ Calling out others is not allowed publicly, if you need to solve a dispute, plea
 
 Feel free to ask me any follow up questions if you have any.`,
         
-	"!!LUA": `Hi! 
+	"!!LUA": `Hi!
 
 It looks like you've written "LUA". Lua is not an acronym (or an initialism) - it is the Portuguese word for 'moon'. 
 
@@ -40,9 +40,10 @@ function handleTextArea(textarea) {
 	if (textarea.classList.contains("-!--templates-added")) return false
 
 	textarea.addEventListener("input", () => {
-		if (shortcuts[textarea.value]) {
-			textarea.value = shortcuts[textarea.value]
-		}
+		textarea.value = textarea.value.replace(/\!\!\S*/, (match) => {
+			// now you don't have to clear the composer to use a shortcut
+			return shortcuts[match] || match
+		})
 	})
 
 	textarea.className += " -!--templates-added"

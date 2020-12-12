@@ -29,7 +29,7 @@ Calling out others is not allowed publicly, if you need to solve a dispute, plea
 
 Feel free to ask me any follow up questions if you have any.`,
         
-    "!!LUA": `Hi! 
+	"!!LUA": `Hi!
 
 It looks like you've written "LUA". Lua is not an acronym (or an initialism) - it is the Portuguese word for 'moon'. 
 

@@ -14,9 +14,8 @@ Chrome: https://chrome.google.com/webstore/detail/devforum%20/obannamndmafaddpcg
 
 ## Features
 
-- Completely hide users' posts (WIP, may break some things)
 - Flairs the OP
-- Flairs new members (as network efficient as it can be; one request per user, caches for tab life)
+- Flairs members (as network efficient as it can be; one request per user, caches for tab life)
 - Highlights posts by Roblox staff members (useful for skimming announcements)
 - Highlights excessive bumps (it gets redder the more of a bump it is)
 - PM Templates

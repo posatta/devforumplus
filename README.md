@@ -23,7 +23,7 @@ Chrome: https://chrome.google.com/webstore/detail/devforum%20/obannamndmafaddpcg
 ## Known bugs
 
 - Flairs disappear when you expand a previous reply.
-- Roblox account is marked as new member
+- ~~Roblox account is marked as new member~~
 
 ## Contributions
 

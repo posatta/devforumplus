@@ -1,4 +1,8 @@
 const shortcuts = {
+        "!!LUAU": `Hi!
+
+It looks like you've written "LUAU". Luau is not an acronym (or an initialism) - it is based on "Lua", which is Portuguese for the word "moon".
+Fun fact: Lua was created in 1993 by Roberto Ierusalimschy, Luiz Henrique de Figueiredo and Waldemar Celes, members of the Computer Graphics Technology Group (Tecgraf) at the Pontifical Catholic University of Rio de Janeiro, in Brazil. See here for more info: https://www.lua.org/about.html`,
 	"!!DUPE": `Many topics have been made regarding this; in the future please try to search before posting.`, // the new lines are so you can link the search query
 	"!!30": `<aaaaaaaaaaaaaaaaaaa></aaaaaaa>`,
 	"!!SPOON": `While you are helping people on the forum, please try not to give code-only replies. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.`,

@@ -1,4 +1,8 @@
 const shortcuts = {
+        "!!CAPSLUAU": `Hey!
+
+Looks like you wrote "LUAU"! Luau is not an acronym (or an initialism) - it's actually based on the language Luau is derived from, "Lua", which is also the Portuguese word for "moon".
+Fun fact: Despite sharing the same spelling, Luau's naming is not based on the Hawaiian feast of the same name.`,
 	"!!DUPE": `Many topics have been made regarding this; in the future please try to search before posting.`, // the new lines are so you can link the search query
 	"!!30": `<aaaaaaaaaaaaaaaaaaa></aaaaaaa>`,
 	"!!SPOON": `While you are helping people on the forum, please try not to give code-only replies. You aren’t explaining what any of your code does, and as a result of this the person asking for help isn’t actually learning anything.`,

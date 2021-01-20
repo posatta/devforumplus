@@ -1,5 +1,5 @@
 const shortcuts = {
-        "!!VMLUAU": `Hey!
+        "!!CAPSLUAU": `Hey!
 
 Looks like you wrote "LUAU"! Luau is not an acronym (or an initialism) - it's actually based on the language Luau is derived from, "Lua", which is also the Portuguese word for "moon".
 Fun fact: Despite sharing the same spelling, Luau's naming is not based on the Hawaiian feast of the same name.`,

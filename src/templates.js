@@ -53,9 +53,8 @@ function handleTextArea(textarea) {
 	if (textarea.classList.contains("-!--templates-added")) return false
 
 	textarea.addEventListener("input", () => {
-		textarea.value = textarea.value.replace(/\!\!\S*/, (match) => {
-			// now you don't have to clear the composer to use a shortcut
-			return shortcuts[match] || match
+		textarea.value = textarea.value.replace(/\!\!\S* /, (match) => {
+			return shortcuts[match] + " " || match
 		})
 	})
 
